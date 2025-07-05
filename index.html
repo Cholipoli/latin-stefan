@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Entraînement Latin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Entraînement Latin</h1>
+  <h2 id="score" style="margin-bottom: 20px;">Score : 0</h2>
+
+  <div>
+    <label for="mode">Choisir un mode d'entraînement :</label>
+    <select id="mode">
+      <option value="latinToFr">Latin → Français</option>
+      <option value="frToLatin">Français → Latin</option>
+      <option value="derives">Dérivés</option>
+      <option value="analyse">Analyse morphologique</option>
+      <option value="declinaison">Écriture des cas</option>
+    </select>
+    <button onclick="startTraining()">Démarrer</button>
+  </div>
+
+  <div id="exercise" style="margin-top: 30px;"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

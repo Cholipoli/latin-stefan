@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+input, select, button {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#exercise {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
