@@ -24,7 +24,7 @@ amicus,l'amis,"amicus, i, m",m,2,amical,,2
 circus,le cirque,"circus, i, m",m,2,circulaire,,2
 ager,le champ,"ager, agri, m",m,2,agricole,,2
 puer,l'enfant,"puer, pueri, m",m,2,puéril,,2
-gladiator,le gladiateur,"gladitor, gladiatoris, m",m,3,,,2
+gladiator,le gladiateur,"gladiator, gladiatoris, m",m,3,,,2
 statua,la stuatue,"statua, ae, f",f,1,statuaire,,3
 dea,la déesse,"dea, ae, f",f,1,,,3
 terra,la terre,"terra, ae, f",f,1,Méditerranée,,3
@@ -42,7 +42,7 @@ Iuppiter,Jupiter,"Iuppiter, Jovis, m",m,3,,,3
 rex,le roi,"rex, regis, m",m,3,,,3
 Apollo,Apollon,"Apollo, Apollinis, m",m,3,,,3
 Mars,Mars,"Mars, Martis, m",m,3,,,3
-miles,le soldat,"miles, militis",m,3,,,3
+miles,le soldat,"miles, militis, m",m,3,,,3
 schola,l'école,"schola, ae, f",f,1,scolaire,,4
 ianua,la porte (de maison),"ianua, ae, f",f,1,,,4
 ferula,"la baguette, la férule","ferula, ae, f",f,1,,,4
@@ -75,7 +75,7 @@ scientia,la connaissance,"scientia, ae, f",f,1,scientifique,,6
 disciplina,l'enseignement,"disciplina, ae, f",f,1,discipline,,6
 locus,"le lieu, l'endroit","locus, i, m",m,2,local,,6
 mundus,le monde,"mundus, i, m",m,2,mondialisation,,6
-officium,"la tâche, la fonction","offiium, i, n",n,2,office,,6
+officium,"la tâche, la fonction","officium, i, n",n,2,office,,6
 sacrificum,le sacrifice,"sacrificum, i, n",n,3,,,6
 praemium,"la réconpense, le dédommagement","praemium, i, n",n,3,prime,,6
 druides,les druides,"druides, druidum, m",m,3,,pl,6
@@ -90,9 +90,9 @@ adulescens,le jeune homme,"adulescens, adulescentis, m",m,3,adolescent,,7
 domina,la maîtresse,"domina, ae, f",f,1,domination,,8
 cura,"le soin, le souci","cura, ae, f",f,1,pédicure,,8
 ira,la colère,"ira, ae, f",f,1,irascible,,8
-supplicium,le supplice,"suplicium, i, n",n,2,,,8
+supplicium,le supplice,"supplicium, i, n",n,2,,,8
 hostis,l'ennemi,"hostis, hostis, m",m,3,hostile,,8
-urbs,la ville,"urbs, urbis, m",m,3,urbain,,8
+urbs,la ville,"urbs, urbis, f",f,3,urbain,,8
 villa,la maison de campagne,"villa, ae, f",f,1,villégiature,,9
 balneum,"le bain, la salle de bains","balneum, i, n",n,2,balnéaire,,9
 pavimentum,le pavement,"pavimentum, i, n",n,2,,,9
@@ -103,12 +103,12 @@ pectus,la poitrine,"pectus, pectoris, n",n,3,pectoral,,9
 latus,le côté,"latus, lateris, n",n,3,latéral,,9
 frigus,le froid,"frigor, frigoris, n",n,3,frigorifier,,9
 corpus,le corps,"corpus, corporis, n",n,3,corporel,,9
-vulnus,la blessure,"vulnus, vulneris",n,3,vulnérable,,9
+vulnus,la blessure,"vulnus, vulneris, n",n,3,vulnérable,,9
 iter,"le chemin, le voyage","iter, itineris, n",n,3,itinéraire,,9
-divitiae,les richesses,"divitiae, arum",f,1,,pl,10
+divitiae,les richesses,"divitiae, arum, f",f,1,,pl,10
 hora,l'heure,"hora, ae, f",f,1,horaire,,10
 homo,"l'homme, l'être humain","homo, hominis, m",m,3,homicide,,10
-mors,le mort,"mors, mortis, f",f,3,mortuaire,,10
+mors,la mort,"mors, mortis, f",f,3,mortuaire,,10
 fames,la faim,"fames, famis, f",f,3,famélique,,10
 mens,l'esprit,"mens, mentis, f",f,3,mental,,10
 tempus,"le temps, l'époque","tempus, temporis, n",n,3,temporaire,,10
@@ -119,13 +119,13 @@ patronus,le patron,"patronus, i, m",m,2,,,11
 vinum,le vin,"vinum, i, n",n,2,,,11
 aurum,l'or,"aurum, i, n",n,2,,,11
 vestimentum,le vêtement,"vestimentum, i, n",n,2,vestimentaire,,11
-navis,le navire,"navis, navis, n",n,3,,,11
+navis,le navire,"navis, navis, f",f,3,,,11
 manus,la main,"manus, us, f",f,4,manuel,,11
 domus,la maison,"domus, us, f",f,4,domaine,,11
 pecunia,l'argent,"pecunia, ae, f",f,1,pécuniaire,,12
 ripa,la rive,"ripa, ae, f",f,1,,,12
 anima,l'âme,"anima, ae, f",f,1,animer,,12
-funus,les funérailles,"funus, funeris",n,3,,,12
+funus,les funérailles,"funus, funeris, n",n,3,,,12
 flumen,"le cours d'eau, le fleuve","flumen, fluminis, n",n,3,flux,,12
 aqua,l'eau,"aqua, ae, f",f,1,aquatique,,12
 puer,"l'enfant, le jeune esclave","puer, pueri, m",m,2,,,12
