@@ -194,6 +194,18 @@ function decliner(mot) {
         return [motdécliné, finénoncé];
     }
     else if (declinaison === '2') {
+        if (mot.mot_latin === "puer") {
+            let déclinaisonpuer = [["puer", "puer", "puerum", "pueri", "puero", "puero"], ["pueri", "pueri", "pueros", "puerorum", "pueris", "pueris"]];
+            let motdécliné = déclinaisonpuer[nombre][cas];
+            console.log("motdécliné:", motdécliné);
+            return [motdécliné, finénoncé];
+        }
+        if (mot.mot_latin === "ager") {
+            let déclinaisonager = [["ager", "ager", "agrum", "agri", "agro", "agro"], ["agri", "agri", "agros", "agrorum", "agris", "agris"]];
+            let motdécliné = déclinaisonager[nombre][cas];
+            console.log("motdécliné:", motdécliné);
+            return [motdécliné, finénoncé];
+        }
         if (mot.genre ==="m"){
             radical = mot.mot_latin.slice(0, -2);
             termaisons = [["us", "e", "um", "i", "o", "o"], ["i", "i", "os", "orum", "is", "is"]];
