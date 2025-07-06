@@ -1,18 +1,115 @@
+/* Pour centrer le contenu et donner un effet carte */
 body {
-  font-family: Arial, sans-serif;
-  margin: 30px;
-  background-color: #f7f7f7;
-  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f7f7f7 60%, #e0e7ff 100%);
 }
 
-input, select, button {
-  font-size: 16px;
-  margin: 10px 0;
+#main-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 40px;
+  margin-top: 40px;
+  max-width: 480px;
+  width: 100%;
+  box-sizing: border-box; /* <-- important pour le padding */
+}
+
+h1 {
+  text-align: center;
+  color: #3b3b6d;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#score {
+  text-align: center;
+  color: #4f8a10;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+#lessons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px 0;
+}
+
+#lessons label {
+  background: #e0e7ff;
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type="checkbox"]:checked + label {
+  background: #b4c6fc;
+}
+
+button {
+  background: #4f8a10;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #376307;
 }
 
 #exercise {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 24px;
+  min-height: 120px;
+  transition: background 0.3s;
+}
+
+
+/* Responsive pour mobile */
+@media (max-width: 600px) {
+  #main-container {
+    padding: 16px 4vw;
+    margin-top: 10px;
+    max-width: 100vw;
+    min-width: 0;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+  #score {
+    font-size: 1em;
+  }
+  #lessons {
+    gap: 4px;
+    font-size: 14px;
+  }
+  #lessons label {
+    font-size: 13px;
+    padding: 2px 5px;
+  }
+  button {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  #exercise {
+    min-height: 80px;
+    font-size: 1em;
+  }
+  input[type="text"] {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
 }

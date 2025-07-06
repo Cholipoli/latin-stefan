@@ -71,23 +71,30 @@ fetch("vocabulaire.csv")
     });
   });
 function startTraining() {
-    document.getElementById("exercise").style.background = "#fff";
+document.getElementById("exercise").style.background = "#fff";
     console.log("startTraining called");
-  const mode = document.getElementById("mode").value;
-  if (mode === "derives") {
-    let pickagain = true ;
-    while (pickagain) {
-        currentWord = data[Math.floor(Math.random() * data.length)];
-        if (currentWord.derives === "") {
-            pickagain = true;
-        } else {
-            pickagain = false;
-        }
+    const mode = document.getElementById("mode").value;
+
+    // Récupère les leçons cochées
+    const checkedLessons = Array.from(document.querySelectorAll('.lesson-checkbox:checked')).map(cb => cb.value);
+
+    // Filtre les mots selon les leçons cochées
+    let possibleWords = data.filter(word => checkedLessons.includes(word.lesson));
+
+    // Si mode dérivés, filtre encore
+    if (mode === "derives") {
+        possibleWords = possibleWords.filter(word => word.derives && word.derives.trim() !== "");
     }
-  }
-  else{
-    currentWord = data[Math.floor(Math.random() * data.length)];
-  }
+
+    // Si aucun mot possible, affiche un message et stoppe
+    if (possibleWords.length === 0) {
+        document.getElementById("exercise").innerHTML = "<span style='color:red;'>Aucun mot pour cette sélection de leçons.</span>";
+        return;
+    }
+
+    // Tire un mot au hasard parmi les possibles
+    currentWord = possibleWords[Math.floor(Math.random() * possibleWords.length)];
+
 
   const container = document.getElementById("exercise");
   container.innerHTML = "";

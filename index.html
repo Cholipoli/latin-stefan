@@ -3,26 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Entraînement Latin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
 </head>
 <body>
-  <h1>Entraînement Latin</h1>
-  <h2 id="score" style="margin-bottom: 20px;">Score : 0</h2>
+  <div id="main-container">
+    <h1>Entraînement Latin</h1>
+    <h2 id="score" style="margin-bottom: 20px;">Score : 0</h2>
 
-  <div>
-    <label for="mode">Choisir un mode d'entraînement :</label>
-    <select id="mode">
-      <option value="latinToFr">Latin → Français</option>
-      <option value="frToLatin">Français → Latin</option>
-      <option value="derives">Dérivés</option>
-      <option value="analyse">Analyse morphologique</option>
-      <option value="declinaison">Écriture des cas</option>
-    </select>
-    <button onclick="startTraining()">Démarrer</button>
+    <div>
+      <label for="mode">Choisir un mode d'entraînement :</label>
+      <select id="mode">
+        <option value="latinToFr">Latin → Français</option>
+        <option value="frToLatin">Français → Latin</option>
+        <option value="derives">Dérivés</option>
+        <!--<option value="analyse">Analyse morphologique</option>-->
+        <option value="declinaison">Écriture des cas</option>
+      </select>
+      <button onclick="startTraining()">Démarrer</button>
+    </div>
+
+    <div id="lessons">
+      <span>Leçons :</span>
+      <label><input type="checkbox" class="lesson-checkbox" value="1" checked>1</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="2" checked>2</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="3" checked>3</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="4" checked>4</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="5" checked>5</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="6" checked>6</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="7" checked>7</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="8" checked>8</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="9" checked>9</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="10" checked>10</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="11" checked>11</label>
+      <label><input type="checkbox" class="lesson-checkbox" value="12" checked>12</label>
+    </div>
+
+    <div id="exercise" style="margin-top: 30px;"></div>
   </div>
-
-  <div id="exercise" style="margin-top: 30px;"></div>
-
   <script src="script.js" defer></script>
 </body>
 </html>
